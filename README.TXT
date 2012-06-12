@@ -31,3 +31,11 @@ EXAMPLE:
 
 See Release\BrushScriptStd_Fuzzing.bat - you can run this scenario to start fuzzing with the Brush Script Std Regular font.
 
+This fuzzer helps me to find remote (client-side) DoS 0day vulnerability in Windows kernel, with invalid decoding of 0x0d byte in the Type 2 Charstring Format Glyph, that drops ATMFD.DLL code into the infinite loop.
+
+PoC code: http://dl.dropbox.com/u/22903093/blog/CFF_Type-1_0x0d_expl/CFF_Type-1_0x0d_expl.rar
+
+Detailed analysis (russian): http://blog.cr4.sh/2012/06/0day-windows.html
+
+
+
